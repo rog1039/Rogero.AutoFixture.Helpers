@@ -1,5 +1,13 @@
 # Rogero.AutoFixture.Helpers
 
+## Nuget
+
+```Install-Package Rogero.AutoFixture.Helpers```
+
+Nuget here: https://www.nuget.org/packages/Rogero.AutoFixture.Helpers/
+
+# Overview
+
 This is a simple library of methods to help configure Moq mock objects using AutoFixture.
 
 I typically use it like the following:
