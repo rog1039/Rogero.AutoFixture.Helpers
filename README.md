@@ -34,7 +34,11 @@ When we resolve from the container for the mocked object or an object that uses 
 
 ## Helpful Hint
 
-This project works best when creating fixture like this: ```var fixture = new Fixture().Customize(new AutoMoqCustomization());```
+This project works best when creating fixture like this: 
+```csharp
+var fixture = new Fixture();
+fixture.Customize(new AutoConfiguredMoqCustomization());
+```
 
 This way we can resolve from the Fixture and any dependencies required will be Moq'ed automatically.
 
