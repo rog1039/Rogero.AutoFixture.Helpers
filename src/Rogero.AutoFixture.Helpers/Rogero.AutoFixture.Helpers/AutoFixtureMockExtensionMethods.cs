@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using Moq;
 using Moq.Language.Flow;
@@ -44,6 +47,11 @@ namespace Rogero.AutoFixture.Helpers
         public static void Verify<T>(this IFixture fixture, Expression<Action<T>> action, Times times) where T : class
         {
             fixture.GetMock<T>().Verify(action, times);
+        }
+
+        public static IList<T> CreateList<T>(this IFixture fixture, int count)
+        {
+            return fixture.CreateMany<T>(count).ToList();
         }
     }
 }
