@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using AutoFixture;
 using Moq;
 using Moq.Language.Flow;
-using Ploeh.AutoFixture;
 
 namespace Rogero.AutoFixture.Helpers
 {
